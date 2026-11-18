@@ -1,0 +1,8 @@
+{
+  "name": "Tabletop Dining System",
+  "description": "Appetizing QR-code tabletop dining and ordering experience with instant kitchen firing, dish customization, split bill calculator, and server paging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

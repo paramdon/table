@@ -1,0 +1,2414 @@
+{
+  "superAdmin": {
+    "id": "super-admin-01",
+    "name": "Platform Super Administrator",
+    "email": "admin@urdearmenu.com",
+    "username": "admin",
+    "role": "superadmin",
+    "passwordSalt": "fc0b095aad04a985ae854c54d8c82679",
+    "passwordHash": "31f8aa5ec563fdc4638dd9398cb919facc096736d53a507f4cb41533cfc045a2ccd88b7d3b720836fd1c3fd17c4a71641742a6a22c50c3e6cd49ca4f074472f7",
+    "createdAt": 1794399255183,
+    "sessionToken": "super_adm_5402d84497e1139e06651a16e1966217e2351bb1b47f953c"
+  },
+  "restaurants": [
+    {
+      "id": "rest_malhotra-royal-dine_87wp",
+      "name": "Malhotra Royal Dine",
+      "slug": "malhotra-royal-dine",
+      "tagline": "North Indian & Mughlai • Digital Dine-in",
+      "phone": "9876543210",
+      "gstin": "",
+      "fssaiLic": "",
+      "address": "New Delhi",
+      "currency": "INR",
+      "wifiSsid": "Malhotra_Royal_Dine_Guest",
+      "wifiPassword": "eatfreshbutter",
+      "logo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=200&q=80",
+      "serviceChargePercent": 5,
+      "gstPercent": 5,
+      "ownerEmail": "vikram@malhotradining.com",
+      "ownerName": "Vikram Malhotra",
+      "status": "active",
+      "plan": "growth",
+      "planPrice": 4999,
+      "createdAt": 1794399302548,
+      "subscriptionExpiresAt": 1796991302548
+    },
+    {
+      "id": "rest_clubone_jl0w",
+      "name": "clubone",
+      "slug": "clubone",
+      "tagline": "North Indian & Tandoor Grill • Digital Dine-in",
+      "phone": "8271244160",
+      "gstin": "",
+      "fssaiLic": "",
+      "address": "mumbai",
+      "currency": "INR",
+      "wifiSsid": "clubone__Guest",
+      "wifiPassword": "eatfreshbutter",
+      "logo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=200&q=80",
+      "serviceChargePercent": 5,
+      "gstPercent": 5,
+      "ownerEmail": "pranjalpratyushkumar@gmail.com",
+      "ownerName": "param",
+      "status": "active",
+      "plan": "starter",
+      "planPrice": 1999,
+      "createdAt": 1794400874598,
+      "subscriptionExpiresAt": 1796992874598,
+      "hindiName": "द सैफ्रन बरामदा",
+      "updatedAt": 1794573614472
+    },
+    {
+      "id": "demo-restaurant",
+      "name": "Ur.Dear.Menu Restaurant",
+      "hindiName": "रेस्तरां",
+      "slug": "demo-restaurant",
+      "tagline": "Modern Dine-in & Digital QR Menu",
+      "phone": "+91 98000 00000",
+      "gstin": "",
+      "fssaiLic": "",
+      "address": "New Delhi, India",
+      "currency": "INR",
+      "wifiSsid": "Guest_WiFi",
+      "wifiPassword": "eatfreshbutter",
+      "logo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=200&q=80",
+      "serviceChargePercent": 5,
+      "gstPercent": 5,
+      "status": "active",
+      "plan": "starter"
+    }
+  ],
+  "staffProfiles": [
+    {
+      "id": "staff_owner_1794399302549",
+      "restaurantId": "rest_malhotra-royal-dine_87wp",
+      "name": "Vikram Malhotra",
+      "username": "vikram@malhotradining.com",
+      "email": "vikram@malhotradining.com",
+      "phone": "9876543210",
+      "role": "owner",
+      "permissions": [
+        "all"
+      ],
+      "status": "active",
+      "mustChangePassword": false,
+      "passwordSalt": "fc5006ac27fc911652e6e42e41c36b50",
+      "passwordHash": "21d39f50c0c5a75eef1ce5bfa5dbe06af2c03a1e2ecf895683b012c0b0539f0d6dbeb268312151e4f8c726503892c8955b0a607a98764117e7f74c2e74bc1ab6",
+      "createdAt": 1794399302557,
+      "updatedAt": 1794399302557,
+      "lastLoginAt": 1794399302557
+    },
+    {
+      "id": "staff_owner_1794400874598",
+      "restaurantId": "rest_clubone_jl0w",
+      "name": "param",
+      "username": "pranjalpratyushkumar@gmail.com",
+      "email": "pranjalpratyushkumar@gmail.com",
+      "phone": "8271244160",
+      "role": "owner",
+      "permissions": [
+        "all"
+      ],
+      "status": "active",
+      "mustChangePassword": false,
+      "passwordSalt": "4f8a7512235d421a5fd97dc648b35d18",
+      "passwordHash": "a1e35d5eef0cae877618d625c1df60de6d69fcdbc305c22f464e4ad2663271196b6fc5b4faa3a85a6b4108b1636c503209460c9477fef37962009dcbd226c4a5",
+      "createdAt": 1794400874606,
+      "updatedAt": 1794575019584,
+      "lastLoginAt": 1794575019584
+    },
+    {
+      "id": "staff_1794401036859_gg14",
+      "restaurantId": "rest_clubone_jl0w",
+      "name": "sharma",
+      "username": "sharma1",
+      "phone": "1234567890",
+      "role": "kitchen",
+      "permissions": [
+        "tables:view",
+        "waiter:requests"
+      ],
+      "status": "active",
+      "mustChangePassword": false,
+      "activeInviteToken": "inv_1926e44e8f62c99b055d4cc006a59eb04dc24db32bc58277",
+      "tempPasswordPlain": null,
+      "passwordSalt": "033f8cae3b22c085f40b54ff6d93267e",
+      "passwordHash": "50abf567e92a34d6f4db9ae099daa626ee1a8ba99dac9ece3fd7a67f5aad799d294e9550d0e90148bb48287a6cb050d7385ea06edaae73cb733f5f661e041d10",
+      "createdAt": 1794401036868,
+      "updatedAt": 1794401069513,
+      "lastLoginAt": 1794401069513
+    },
+    {
+      "id": "staff_1794401126528_rff1",
+      "restaurantId": "rest_clubone_jl0w",
+      "name": "sumit",
+      "username": "sumit1",
+      "phone": "1234567890",
+      "role": "waiter",
+      "permissions": [
+        "tables:view",
+        "waiter:requests"
+      ],
+      "status": "active",
+      "mustChangePassword": false,
+      "activeInviteToken": "inv_15bfab59b377af21d413132d17b7b39d15c95133c1975b11",
+      "tempPasswordPlain": null,
+      "passwordSalt": "b7f9651a1d7b4e1cd1744170570ac51c",
+      "passwordHash": "2cf2a906ae099749de96888111965519541793e8bb8a4beb2105382777a03998c08fa85f13305d3226387a58d0a2b202a5a53ca31780d96fb9e4241893db515c",
+      "createdAt": 1794401126538,
+      "updatedAt": 1794401148830,
+      "lastLoginAt": 1794401148830
+    }
+  ],
+  "invitations": [
+    {
+      "id": "inv_1794401036860",
+      "token": "inv_1926e44e8f62c99b055d4cc006a59eb04dc24db32bc58277",
+      "restaurantId": "rest_clubone_jl0w",
+      "staffId": "staff_1794401036859_gg14",
+      "staffName": "sharma",
+      "role": "kitchen",
+      "permissions": [
+        "tables:view",
+        "waiter:requests"
+      ],
+      "expiresAt": 1794573836860,
+      "isUsed": true,
+      "createdAt": 1794401036860,
+      "usedAt": 1794401069513
+    },
+    {
+      "id": "inv_1794401126529",
+      "token": "inv_15bfab59b377af21d413132d17b7b39d15c95133c1975b11",
+      "restaurantId": "rest_clubone_jl0w",
+      "staffId": "staff_1794401126528_rff1",
+      "staffName": "sumit",
+      "role": "waiter",
+      "permissions": [
+        "tables:view",
+        "waiter:requests"
+      ],
+      "expiresAt": 1794573926529,
+      "isUsed": true,
+      "createdAt": 1794401126529,
+      "usedAt": 1794401148831
+    }
+  ],
+  "registeredDevices": [
+    {
+      "id": "dev_1794399302558_ptopm",
+      "staffId": "staff_owner_1794399302549",
+      "staffName": "Vikram Malhotra",
+      "restaurantId": "rest_malhotra-royal-dine_87wp",
+      "role": "owner",
+      "sessionToken": "sess_owner_dca84166dd713de02607feb788b586b082073218341966b3",
+      "deviceName": "Owner Dashboard Terminal",
+      "deviceType": "desktop",
+      "userAgent": "curl/7.88.1",
+      "registeredAt": 1794399302558,
+      "lastActiveAt": 1794399302558,
+      "status": "active"
+    },
+    {
+      "id": "dev_1794400874607_xim78",
+      "staffId": "staff_owner_1794400874598",
+      "staffName": "param",
+      "restaurantId": "rest_clubone_jl0w",
+      "role": "owner",
+      "sessionToken": "sess_owner_df6795ebd6aa04fc0df89b6205ab3e21ec821d172924258e",
+      "deviceName": "Owner Dashboard Terminal",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      "registeredAt": 1794400874607,
+      "lastActiveAt": 1794401944151,
+      "status": "active"
+    },
+    {
+      "id": "dev_1794401069514_dawdq",
+      "staffId": "staff_1794401036859_gg14",
+      "staffName": "sharma",
+      "restaurantId": "rest_clubone_jl0w",
+      "role": "kitchen",
+      "sessionToken": "sess_7f8ee8d3ddc07663162bbc85a35683f2a9a44ef0515d77f6",
+      "deviceName": "Desktop Workstation (Chrome)",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      "registeredAt": 1794401069514,
+      "lastActiveAt": 1794401863549,
+      "status": "active"
+    },
+    {
+      "id": "dev_1794401148831_m5f6i",
+      "staffId": "staff_1794401126528_rff1",
+      "staffName": "sumit",
+      "restaurantId": "rest_clubone_jl0w",
+      "role": "waiter",
+      "sessionToken": "sess_42f6b67326249047f34f81a36df9afb323e51b1a360b5cbe",
+      "deviceName": "Desktop Workstation (Chrome)",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      "registeredAt": 1794401148831,
+      "lastActiveAt": 1794581912425,
+      "status": "active"
+    },
+    {
+      "id": "dev_1794573534793_7e9vq",
+      "staffId": "staff_owner_1794400874598",
+      "staffName": "param",
+      "restaurantId": "rest_clubone_jl0w",
+      "role": "owner",
+      "sessionToken": "sess_owner_6ee91bbf87821dad43a0993a45c2aa42c9a8605d8028290d",
+      "deviceName": "Owner Dashboard Terminal",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      "registeredAt": 1794573534793,
+      "lastActiveAt": 1794573558323,
+      "status": "revoked",
+      "revokedAt": 1794573558324,
+      "revokedBy": "Logged out by user (param)"
+    },
+    {
+      "id": "dev_1794573586952_wl8fh",
+      "staffId": "staff_owner_1794400874598",
+      "staffName": "param",
+      "restaurantId": "rest_clubone_jl0w",
+      "role": "owner",
+      "sessionToken": "sess_owner_977ad8cf596d30d5b71bd44a3e33751cd5f020a94f5f45be",
+      "deviceName": "Owner Dashboard Terminal",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      "registeredAt": 1794573586952,
+      "lastActiveAt": 1794573611657,
+      "status": "active"
+    },
+    {
+      "id": "dev_1794573614333_jwpy4",
+      "staffId": "staff_owner_1794400874598",
+      "staffName": "param",
+      "restaurantId": "rest_clubone_jl0w",
+      "role": "owner",
+      "sessionToken": "sess_owner_ef474cfa2855fa872c76593ef33e448fe0c4a0109d9462fb",
+      "deviceName": "Owner Dashboard Terminal",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      "registeredAt": 1794573614333,
+      "lastActiveAt": 1794573714242,
+      "status": "active"
+    },
+    {
+      "id": "dev_1794575019584_jz01a",
+      "staffId": "staff_owner_1794400874598",
+      "staffName": "param",
+      "restaurantId": "rest_clubone_jl0w",
+      "role": "owner",
+      "sessionToken": "sess_819625ef7d5833312b812cdf6f706a6358d99dabab670f45",
+      "deviceName": "Desktop Workstation (Chrome)",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      "registeredAt": 1794575019584,
+      "lastActiveAt": 1794578068826,
+      "status": "active"
+    }
+  ],
+  "securityAuditLogs": [
+    {
+      "id": "log_1794575019585_79cw",
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "LOGIN_SUCCESS",
+      "performedBy": "param",
+      "targetStaffName": "param",
+      "details": "Logged in on Desktop Workstation (Chrome)",
+      "timestamp": 1794575019585
+    },
+    {
+      "id": "log_1794573715488_vtdq",
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "LOGIN_FAILED",
+      "performedBy": "sharma",
+      "targetStaffName": "sharma",
+      "details": "Password mismatch for sharma (sharma1)",
+      "timestamp": 1794573715488
+    },
+    {
+      "id": "log_1794573558324_0f2a",
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "DEVICE_REVOKED",
+      "performedBy": "Logged out by user (param)",
+      "targetStaffName": "param",
+      "details": "Revoked session for device: Owner Dashboard Terminal (dev_1794573534793_7e9vq)",
+      "timestamp": 1794573558324
+    },
+    {
+      "id": "log_1794401148832_5xrk",
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "INVITATION_USED",
+      "performedBy": "sumit",
+      "targetStaffName": "sumit",
+      "details": "Completed onboarding via invitation on Desktop Workstation (Chrome)",
+      "timestamp": 1794401148832
+    },
+    {
+      "id": "log_1794401126538_u4b6",
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "STAFF_CREATED",
+      "performedBy": "Owner (param)",
+      "targetStaffName": "sumit",
+      "details": "Created waiter profile with invite onboarding",
+      "timestamp": 1794401126538
+    },
+    {
+      "id": "log_1794401069514_278p",
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "INVITATION_USED",
+      "performedBy": "sharma",
+      "targetStaffName": "sharma",
+      "details": "Completed onboarding via invitation on Desktop Workstation (Chrome)",
+      "timestamp": 1794401069514
+    },
+    {
+      "id": "log_1794401036868_j88z",
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "STAFF_CREATED",
+      "performedBy": "Owner (param)",
+      "targetStaffName": "sharma",
+      "details": "Created kitchen profile with invite onboarding",
+      "timestamp": 1794401036868
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_1794574892751_ix2u",
+      "restaurantId": "rest_clubone_jl0w",
+      "name": "param kumar",
+      "phoneNumber": "8271244160",
+      "phoneVerified": true,
+      "firstVisit": 1794574892751,
+      "lastVisit": 1794574909660,
+      "visitCount": 1,
+      "totalOrders": 1,
+      "totalSpent": 294,
+      "averageOrderValue": 294,
+      "preferredItems": [
+        "chicken momoes"
+      ],
+      "categoryPreferences": [],
+      "dietaryPreferences": [],
+      "preferredTable": "02",
+      "marketingConsent": true,
+      "marketingConsentAt": 1794574909581,
+      "marketingConsentSource": "QR Table 02 Checkout",
+      "customerToken": "cust_tok_1c581add0c5a949fe128bf9217ea3b9554d26a55008fab46",
+      "createdAt": 1794574892751,
+      "updatedAt": 1794574909581
+    }
+  ],
+  "customerOrders": [
+    {
+      "id": "cord_1794574909660_j3hg",
+      "customerId": "cust_1794574892751_ix2u",
+      "restaurantId": "rest_clubone_jl0w",
+      "orderId": "ord-1794574909558",
+      "orderNumber": "256",
+      "tableNumber": "02",
+      "items": [
+        {
+          "id": "oi-1794574858296-jb2",
+          "menuItemId": "dish-1794574819401-tycs",
+          "name": "chicken momoes",
+          "price": 280,
+          "quantity": 1,
+          "dietType": "non-veg",
+          "customization": {
+            "addons": [],
+            "isJain": false
+          },
+          "itemTotal": 280
+        }
+      ],
+      "totalAmount": 294,
+      "timestamp": 1794574909660
+    }
+  ],
+  "waiterRequests": [
+    {
+      "id": "wreq_1794399419123_tx6p",
+      "restaurantId": "rest_malhotra-royal-dine_87wp",
+      "tableNumber": "01",
+      "requestType": "Need Extra Cutlery",
+      "details": "",
+      "status": "pending",
+      "timestamp": 1794399419123
+    },
+    {
+      "id": "wreq_1794399346054_yht7",
+      "restaurantId": "rest_malhotra-royal-dine_87wp",
+      "tableNumber": "01",
+      "requestType": "Need Extra Cutlery & Napkins",
+      "details": "",
+      "status": "pending",
+      "timestamp": 1794399346054
+    },
+    {
+      "id": "wreq_1794399331014_z7kc",
+      "restaurantId": "rest_malhotra-royal-dine_87wp",
+      "tableNumber": "01",
+      "requestType": "Need Extra Cutlery & Napkins",
+      "details": "",
+      "status": "pending",
+      "timestamp": 1794399331014
+    }
+  ],
+  "platformSubscriptions": [
+    {
+      "id": "sub_1794401721526_i94o",
+      "restaurantId": "demo-restaurant",
+      "restaurantName": "Restaurant Workspace",
+      "ownerEmail": "",
+      "planName": "Professional",
+      "amount": 4999,
+      "currency": "INR",
+      "billingCycle": "monthly",
+      "status": "paid",
+      "invoiceNumber": "INV-UDM-SUB-2026-4465",
+      "paidAt": 1794401721526,
+      "periodEnd": 1796993721526
+    },
+    {
+      "id": "sub_1794399302557_87wp",
+      "restaurantId": "rest_malhotra-royal-dine_87wp",
+      "restaurantName": "Malhotra Royal Dine",
+      "ownerEmail": "vikram@malhotradining.com",
+      "planName": "Growth",
+      "amount": 4999,
+      "currency": "INR",
+      "billingCycle": "monthly",
+      "status": "paid",
+      "invoiceNumber": "INV-UDM-2026-9086",
+      "paidAt": 1794399302557,
+      "periodEnd": 1796991302558
+    },
+    {
+      "id": "sub_1794400874606_jl0w",
+      "restaurantId": "rest_clubone_jl0w",
+      "restaurantName": "clubone",
+      "ownerEmail": "pranjalpratyushkumar@gmail.com",
+      "planName": "Starter",
+      "amount": 1999,
+      "currency": "INR",
+      "billingCycle": "monthly",
+      "status": "paid",
+      "invoiceNumber": "INV-UDM-2026-1367",
+      "paidAt": 1794400874606,
+      "periodEnd": 1796992874606
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "dish-1794574819401-tycs",
+      "restaurantId": "rest_clubone_jl0w",
+      "categoryId": "cat-1794574800705-2kwg",
+      "name": "chicken momoes",
+      "description": "Prepared fresh with aromatic spices and herbs.",
+      "price": 280,
+      "dietType": "non-veg",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+      "prepTimeMinutes": 12,
+      "isAvailable": true,
+      "isJainAvailable": false,
+      "isBestseller": true,
+      "isPopular": true,
+      "isDailySpecial": false,
+      "spiceLevel": 1
+    },
+    {
+      "id": "dish-1794574837084-xa5r",
+      "restaurantId": "rest_clubone_jl0w",
+      "categoryId": "cat-1794574800705-2kwg",
+      "name": "veg momoes",
+      "description": "Prepared fresh with aromatic spices and herbs.",
+      "price": 180,
+      "dietType": "veg",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+      "prepTimeMinutes": 12,
+      "isAvailable": true,
+      "isJainAvailable": false,
+      "isBestseller": false,
+      "isPopular": false,
+      "isDailySpecial": true,
+      "spiceLevel": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1794574800705-2kwg",
+      "restaurantId": "rest_clubone_jl0w",
+      "name": "momos",
+      "icon": "Utensils",
+      "sortOrder": 1
+    }
+  ],
+  "tables": [
+    {
+      "id": "tbl-rest_clubone_jl0w-02",
+      "restaurantId": "rest_clubone_jl0w",
+      "number": "02",
+      "name": "Table 02",
+      "capacity": 4,
+      "zone": "Main Dining",
+      "status": "occupied",
+      "secureToken": "qr_ae7035cb6fc54315",
+      "activeDinersCount": 1,
+      "lastActivityAt": 1794575197971,
+      "currentOrderId": "ord-1794574909647"
+    }
+  ],
+  "subscriptionPlans": [
+    {
+      "id": "plan_flex",
+      "slug": "flex",
+      "name": "Flex",
+      "tierRank": 0,
+      "priceInr": 0,
+      "priceUsd": 0,
+      "annualDiscountPercent": 0,
+      "commissionPercent": 3,
+      "targetCustomer": "Small cafes and restaurants starting with digital ordering.",
+      "description": "Zero monthly subscription. Start QR ordering immediately with a 3% commission per eligible QR order.",
+      "features": [
+        "Digital QR menu & unlimited categories/items",
+        "Customer QR ordering & live order tracking",
+        "Kitchen Display System (KDS) & Waiter Display",
+        "Basic customer CRM & basic analytics",
+        "Basic sales dashboard & table QR generation",
+        "Basic staff accounts & floor table list",
+        "Standard email & helpdesk support"
+      ],
+      "restrictions": [
+        "Basic floor/table management only",
+        "No visual floor map",
+        "No advanced staff device management",
+        "No advanced financial exports",
+        "No multi-floor or banquet management",
+        "No multi-branch or white-labeling"
+      ],
+      "maxStaffAccounts": 5,
+      "maxRegisteredDevices": 4,
+      "trialDays": 0,
+      "isPublic": true,
+      "isCustomEnterprise": false,
+      "updatedAt": 1794581897695
+    },
+    {
+      "id": "plan_essential",
+      "slug": "essential",
+      "name": "Essential",
+      "tierRank": 1,
+      "priceInr": 1999,
+      "priceUsd": 24,
+      "annualDiscountPercent": 20,
+      "commissionPercent": 2,
+      "targetCustomer": "Growing cafes, family restaurants and busy diners.",
+      "description": "Reduced 2% commission plus visual floor map, secure staff onboarding, device revocation, and weekly reports.",
+      "recommended": true,
+      "features": [
+        "Everything in Flex, plus:",
+        "Visual floor map & advanced table status management",
+        "Staff invitation links & temp password onboarding",
+        "One-time device registration & remote logout/revocation",
+        "Custom staff permissions & account management",
+        "Customer visit history & returning guest recognition",
+        "Weekly sales & weekly billing reports",
+        "Advanced order management & improved analytics"
+      ],
+      "maxStaffAccounts": 25,
+      "maxRegisteredDevices": 20,
+      "trialDays": 14,
+      "isPublic": true,
+      "isCustomEnterprise": false,
+      "updatedAt": 1794581897695
+    },
+    {
+      "id": "plan_professional",
+      "slug": "professional",
+      "name": "Professional",
+      "tierRank": 2,
+      "priceInr": 4999,
+      "priceUsd": 59,
+      "annualDiscountPercent": 20,
+      "commissionPercent": 0.75,
+      "targetCustomer": "High-volume restaurants, multi-floor restaurants and banquet venues.",
+      "description": "Ultra-low 0.75% commission with multi-floor zones, banquet management, CRM CSV exports, and API access.",
+      "features": [
+        "Everything in Essential, plus:",
+        "Multi-floor management & multiple dining zones",
+        "Banquet management & event zones",
+        "Advanced customer segmentation & CRM analytics",
+        "Customer database CSV export",
+        "Advanced financial, zone & staff activity reports",
+        "Inventory insights & API integrations",
+        "Priority 24/7 telephone support"
+      ],
+      "maxStaffAccounts": 100,
+      "maxRegisteredDevices": 75,
+      "trialDays": 14,
+      "isPublic": true,
+      "isCustomEnterprise": false,
+      "updatedAt": 1794581897695
+    },
+    {
+      "id": "plan_enterprise",
+      "slug": "enterprise",
+      "name": "Enterprise",
+      "tierRank": 3,
+      "priceInr": 9999,
+      "priceUsd": 119,
+      "annualDiscountPercent": 20,
+      "commissionPercent": 0,
+      "targetCustomer": "Restaurant chains, hotels, luxury resorts and large dining businesses.",
+      "description": "0% platform commission with multi-branch management, white-label custom domain, and custom POS/ERP integrations.",
+      "features": [
+        "Everything in Professional, plus:",
+        "0% d.cc platform commission on all QR orders",
+        "Multi-branch restaurant management & brand dashboard",
+        "Branch-wise analytics & centralized reporting",
+        "Unlimited staff accounts & registered devices",
+        "Custom domain, white-label platform & custom branding",
+        "Custom POS & ERP integrations + advanced API access",
+        "Dedicated account manager & custom onboarding"
+      ],
+      "maxStaffAccounts": null,
+      "maxRegisteredDevices": null,
+      "trialDays": 30,
+      "isPublic": true,
+      "isCustomEnterprise": true,
+      "updatedAt": 1794581897695
+    }
+  ],
+  "restaurantSubscriptions": [
+    {
+      "id": "rsub_1794401721526_mejy",
+      "restaurantId": "demo-restaurant",
+      "restaurantName": "Restaurant Workspace",
+      "ownerEmail": "",
+      "planId": "plan_professional",
+      "planName": "Professional",
+      "billingCycle": "monthly",
+      "amount": 4999,
+      "currency": "INR",
+      "status": "active",
+      "commissionRate": 0.75,
+      "currentPeriodStart": 1794401721526,
+      "currentPeriodEnd": 1796993721526,
+      "cancelAtPeriodEnd": false,
+      "createdAt": 1794401721526,
+      "updatedAt": 1794401721526
+    },
+    {
+      "id": "rsub_1794573624106_80mz",
+      "restaurantId": "rest_clubone_jl0w",
+      "restaurantName": "clubone",
+      "ownerEmail": "pranjalpratyushkumar@gmail.com",
+      "planId": "plan_essential",
+      "planName": "Essential",
+      "billingCycle": "monthly",
+      "amount": 1999,
+      "currency": "INR",
+      "status": "active",
+      "commissionRate": 2,
+      "currentPeriodStart": 1794573624106,
+      "currentPeriodEnd": 1797165624106,
+      "cancelAtPeriodEnd": false,
+      "createdAt": 1794573624106,
+      "updatedAt": 1794573624106
+    }
+  ],
+  "paymentMethods": [
+    {
+      "restaurantId": "demo-restaurant",
+      "onlineGatewayEnabled": true,
+      "onlineGatewayProvider": "razorpay",
+      "payAtRestaurantCashEnabled": true,
+      "payAtRestaurantUpiEnabled": true,
+      "restaurantUpiId": "demorestaurant@merchantupi",
+      "restaurantUpiName": "Ur.Dear.Menu Restaurant",
+      "updatedAt": 1794401726192
+    },
+    {
+      "restaurantId": "rest_clubone_jl0w",
+      "onlineGatewayEnabled": true,
+      "onlineGatewayProvider": "razorpay",
+      "payAtRestaurantCashEnabled": true,
+      "payAtRestaurantUpiEnabled": true,
+      "restaurantUpiId": "restclubonejl0w@merchantupi",
+      "restaurantUpiName": "Ur.Dear.Menu Restaurant",
+      "updatedAt": 1794573624125
+    }
+  ],
+  "paymentTransactions": [
+    {
+      "id": "tx_1794581526500_3wa7",
+      "restaurantId": "rest_clubone_jl0w",
+      "orderId": "ord-1794574909647",
+      "orderNumber": "#UDM-990",
+      "amount": 308,
+      "currency": "INR",
+      "paymentType": "pay_at_restaurant",
+      "method": "cash",
+      "status": "success",
+      "confirmedByStaffId": "staff_1794401126528_rff1",
+      "confirmedByStaffName": "sumit",
+      "createdAt": 1794581526500,
+      "updatedAt": 1794581526500
+    },
+    {
+      "id": "tx_1794401886469_g8hc",
+      "restaurantId": "demo-restaurant",
+      "orderId": "ord-offline-2",
+      "orderNumber": "DCC-02",
+      "amount": 1500,
+      "currency": "INR",
+      "paymentType": "pay_at_restaurant",
+      "method": "cash",
+      "status": "success",
+      "confirmedByStaffId": "staff_counter",
+      "confirmedByStaffName": "Rajesh Sharma",
+      "createdAt": 1794401886469,
+      "updatedAt": 1794401886469
+    },
+    {
+      "id": "tx_1794401800610_lmpa",
+      "restaurantId": "demo-restaurant",
+      "orderId": "ord-online-1",
+      "orderNumber": "DCC-01",
+      "amount": 1000,
+      "currency": "INR",
+      "paymentType": "online_gateway",
+      "method": "upi",
+      "gatewayProvider": "razorpay",
+      "gatewayOrderId": "order_gw_1794401800610_7ksc",
+      "status": "success",
+      "idempotencyKey": "idemp_demo-restaurant_ord-online-1_1794401800610",
+      "createdAt": 1794401800610,
+      "updatedAt": 1794401800631,
+      "gatewayTransactionId": "pay_test_live_001"
+    },
+    {
+      "id": "tx_1794401766712_2xyt",
+      "restaurantId": "demo-restaurant",
+      "orderId": "ord-online-1",
+      "orderNumber": "DCC-01",
+      "amount": 1000,
+      "currency": "INR",
+      "paymentType": "online_gateway",
+      "method": "upi",
+      "gatewayProvider": "razorpay",
+      "gatewayOrderId": "order_gw_1794401766712_8zi6",
+      "status": "failed",
+      "idempotencyKey": "idemp_demo-restaurant_ord-online-1_1794401766712",
+      "createdAt": 1794401766712,
+      "updatedAt": 1794401766735
+    },
+    {
+      "id": "tx_1794401726192_hh7k",
+      "restaurantId": "demo-restaurant",
+      "orderId": "ord-test-101",
+      "orderNumber": "DCC-01",
+      "amount": 1050,
+      "currency": "INR",
+      "paymentType": "online_gateway",
+      "method": "upi",
+      "gatewayProvider": "razorpay",
+      "gatewayOrderId": "order_gw_1794401726192_z6zi",
+      "status": "pending",
+      "idempotencyKey": "idemp_demo-restaurant_ord-test-101_1794401726192",
+      "createdAt": 1794401726192,
+      "updatedAt": 1794401726192
+    }
+  ],
+  "paymentWebhooks": [],
+  "commissionRecords": [
+    {
+      "id": "com_1794581526501_5ae3",
+      "restaurantId": "rest_clubone_jl0w",
+      "orderId": "ord-1794574909647",
+      "orderNumber": "#UDM-990",
+      "eligibleOrderAmount": 280,
+      "planSnapshot": "Essential",
+      "commissionRateSnapshot": 2,
+      "commissionAmount": 5.6,
+      "currency": "INR",
+      "paymentMethod": "cash",
+      "paymentType": "pay_at_restaurant",
+      "status": "unbilled",
+      "createdAt": 1794581526501
+    },
+    {
+      "id": "com_1794401886470_qee5",
+      "restaurantId": "demo-restaurant",
+      "orderId": "ord-offline-2",
+      "orderNumber": "DCC-02",
+      "eligibleOrderAmount": 1400,
+      "planSnapshot": "Professional",
+      "commissionRateSnapshot": 0.75,
+      "commissionAmount": 10.5,
+      "currency": "INR",
+      "paymentMethod": "cash",
+      "paymentType": "pay_at_restaurant",
+      "status": "paid",
+      "createdAt": 1794401886470,
+      "refundAdjustedAmount": 5.25,
+      "invoiceId": "inv_1794401938828_qm7h"
+    },
+    {
+      "id": "com_1794401800632_o93t",
+      "restaurantId": "demo-restaurant",
+      "orderId": "ord-online-1",
+      "orderNumber": "DCC-01",
+      "eligibleOrderAmount": 950,
+      "planSnapshot": "Professional",
+      "commissionRateSnapshot": 0.75,
+      "commissionAmount": 7.13,
+      "currency": "INR",
+      "paymentMethod": "upi",
+      "paymentType": "online_gateway",
+      "status": "paid",
+      "createdAt": 1794401800632,
+      "invoiceId": "inv_1794401938828_qm7h"
+    }
+  ],
+  "commissionLedger": [
+    {
+      "id": "cld_1794581526501_42tn",
+      "restaurantId": "rest_clubone_jl0w",
+      "type": "order_commission",
+      "referenceId": "com_1794581526501_5ae3",
+      "description": "Commission on Order ##UDM-990 (2% of INR280)",
+      "amount": 5.6,
+      "runningBalance": 11.2,
+      "createdAt": 1794581526501
+    },
+    {
+      "id": "cld_1794401946089_qlet",
+      "restaurantId": "demo-restaurant",
+      "type": "commission_payment",
+      "referenceId": "inv_1794401938828_qm7h",
+      "description": "Payment for Invoice #INV-UDM-COM-2026-7520 via ONLINE",
+      "amount": -12.379999999999999,
+      "runningBalance": 0,
+      "createdAt": 1794401946089
+    },
+    {
+      "id": "cld_1794401895381_xt5o",
+      "restaurantId": "demo-restaurant",
+      "type": "refund_reversal",
+      "referenceId": "com_1794401886470_qee5",
+      "description": "Commission reversal for Order #DCC-02 refund (50%)",
+      "amount": -5.25,
+      "runningBalance": 7.13,
+      "createdAt": 1794401895381
+    },
+    {
+      "id": "cld_1794401886470_1g1o",
+      "restaurantId": "demo-restaurant",
+      "type": "order_commission",
+      "referenceId": "com_1794401886470_qee5",
+      "description": "Commission on Order #DCC-02 (0.75% of INR1400)",
+      "amount": 10.5,
+      "runningBalance": 28.13,
+      "createdAt": 1794401886470
+    },
+    {
+      "id": "cld_1794401800632_7ohd",
+      "restaurantId": "demo-restaurant",
+      "type": "order_commission",
+      "referenceId": "com_1794401800632_o93t",
+      "description": "Commission on Order #DCC-01 (0.75% of INR950)",
+      "amount": 7.13,
+      "runningBalance": 14.26,
+      "createdAt": 1794401800632
+    }
+  ],
+  "restaurantInvoices": [
+    {
+      "id": "inv_1794401938828_qm7h",
+      "invoiceNumber": "INV-UDM-COM-2026-7520",
+      "restaurantId": "demo-restaurant",
+      "restaurantName": "Restaurant Workspace",
+      "billingPeriodStart": 1794401800632,
+      "billingPeriodEnd": 1794401886470,
+      "type": "commission_weekly",
+      "currency": "INR",
+      "subtotal": 12.379999999999999,
+      "tax": 2.23,
+      "total": 14.61,
+      "status": "paid",
+      "dueDate": 1794833938828,
+      "issuedAt": 1794401938828,
+      "itemizedOrdersCount": 2,
+      "notes": "Weekly commission settlement for 2 completed QR orders.",
+      "paidAt": 1794401946089,
+      "paymentMethod": "online"
+    },
+    {
+      "id": "inv_1794401721526_7yrn",
+      "invoiceNumber": "INV-UDM-SUB-2026-4465",
+      "restaurantId": "demo-restaurant",
+      "restaurantName": "Restaurant Workspace",
+      "billingPeriodStart": 1794401721526,
+      "billingPeriodEnd": 1796993721526,
+      "type": "subscription",
+      "currency": "INR",
+      "subtotal": 4999,
+      "tax": 900,
+      "total": 5899,
+      "status": "paid",
+      "dueDate": 1794401721526,
+      "issuedAt": 1794401721526,
+      "paidAt": 1794401721526,
+      "notes": "Subscription: Professional (MONTHLY)"
+    }
+  ],
+  "settlementRecords": [
+    {
+      "id": "set_1794401800632_bihs",
+      "createdAt": 1794401800632,
+      "restaurantId": "demo-restaurant",
+      "restaurantName": "Restaurant Workspace",
+      "totalOnlineVolume": 950,
+      "platformCommissionDeducted": 7.13,
+      "gatewayFeesDeducted": 19,
+      "netSettlementAmount": 923.87,
+      "currency": "INR",
+      "status": "pending_approval"
+    }
+  ],
+  "refundRecords": [
+    {
+      "id": "ref_1794401895382_1tp7",
+      "createdAt": 1794401895382,
+      "restaurantId": "demo-restaurant",
+      "orderId": "ord-offline-2",
+      "transactionId": "",
+      "amount": 700,
+      "reason": "Partial returned dish",
+      "commissionReversed": 5.25,
+      "processedBy": "Restaurant Admin (manager)",
+      "status": "processed"
+    }
+  ],
+  "paymentAuditLogs": [
+    {
+      "id": "pal_1794581526502_ffpz",
+      "timestamp": 1794581526502,
+      "restaurantId": "rest_clubone_jl0w",
+      "action": "PAYMENT_CONFIRMED_OFFLINE",
+      "actor": "sumit (WAITER)",
+      "details": "Confirmed CASH payment of ₹308 for Table 02 Order ##UDM-990. Commission of ₹5.6 added to weekly ledger."
+    },
+    {
+      "id": "pal_1794401895382_phi2",
+      "timestamp": 1794401895382,
+      "restaurantId": "demo-restaurant",
+      "action": "REFUND_PROCESSED",
+      "actor": "Restaurant Admin",
+      "details": "Refunded ₹700 for Order ord-offline-2. Reversible commission: ₹5.25. Reason: Partial returned dish"
+    },
+    {
+      "id": "pal_1794401886470_5br0",
+      "timestamp": 1794401886470,
+      "restaurantId": "demo-restaurant",
+      "action": "PAYMENT_CONFIRMED_OFFLINE",
+      "actor": "Rajesh Sharma (WAITER)",
+      "details": "Confirmed CASH payment of ₹1500 for Table undefined Order #DCC-02. Commission of ₹10.5 added to weekly ledger."
+    },
+    {
+      "id": "pal_1794401800633_3lgz",
+      "timestamp": 1794401800633,
+      "restaurantId": "demo-restaurant",
+      "action": "PAYMENT_VERIFIED_ONLINE",
+      "actor": "Gateway Webhook / Client Verification",
+      "details": "Online payment of INR 1000 verified for Order #DCC-01. Commission: INR 7.13"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1794574909647",
+      "orderNumber": "#UDM-990",
+      "restaurantId": "rest_clubone_jl0w",
+      "tableId": "tbl-02",
+      "tableNumber": "02",
+      "dinerName": "param kumar",
+      "status": "served",
+      "items": [
+        {
+          "id": "oi-1794574858296-jb2",
+          "menuItemId": "dish-1794574819401-tycs",
+          "name": "chicken momoes",
+          "price": 280,
+          "quantity": 1,
+          "dietType": "non-veg",
+          "customization": {
+            "addons": [],
+            "isJain": false
+          },
+          "itemTotal": 280
+        }
+      ],
+      "subtotal": 280,
+      "cgst": 7,
+      "sgst": 7,
+      "serviceCharge": 14,
+      "tip": 0,
+      "grandTotal": 308,
+      "paymentStatus": "paid",
+      "placedAt": 1794574909647,
+      "paymentMethod": "cash",
+      "preparedAt": 1794575155591,
+      "servedAt": 1794575197968,
+      "paidAt": 1794581526501
+    }
+  ],
+  "trackableQrs": [],
+  "planEntitlements": [
+    {
+      "id": "ent_plan_flex_qr_ordering",
+      "planId": "plan_flex",
+      "featureKey": "qr_ordering",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Customer QR Ordering"
+    },
+    {
+      "id": "ent_plan_flex_digital_menu",
+      "planId": "plan_flex",
+      "featureKey": "digital_menu",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Digital QR Menu & Unlimited Items"
+    },
+    {
+      "id": "ent_plan_flex_kitchen_display",
+      "planId": "plan_flex",
+      "featureKey": "kitchen_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Kitchen Display System (KDS)"
+    },
+    {
+      "id": "ent_plan_flex_waiter_display",
+      "planId": "plan_flex",
+      "featureKey": "waiter_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Waiter Display System"
+    },
+    {
+      "id": "ent_plan_flex_live_order_tracking",
+      "planId": "plan_flex",
+      "featureKey": "live_order_tracking",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Live Order Tracking"
+    },
+    {
+      "id": "ent_plan_flex_table_qr_generation",
+      "planId": "plan_flex",
+      "featureKey": "table_qr_generation",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Table QR Generation"
+    },
+    {
+      "id": "ent_plan_flex_basic_crm",
+      "planId": "plan_flex",
+      "featureKey": "basic_crm",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer CRM"
+    },
+    {
+      "id": "ent_plan_flex_basic_analytics",
+      "planId": "plan_flex",
+      "featureKey": "basic_analytics",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer Analytics"
+    },
+    {
+      "id": "ent_plan_flex_basic_sales_dashboard",
+      "planId": "plan_flex",
+      "featureKey": "basic_sales_dashboard",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Sales Dashboard"
+    },
+    {
+      "id": "ent_plan_flex_basic_staff_accounts",
+      "planId": "plan_flex",
+      "featureKey": "basic_staff_accounts",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Staff Accounts"
+    },
+    {
+      "id": "ent_plan_flex_basic_table_management",
+      "planId": "plan_flex",
+      "featureKey": "basic_table_management",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Floor Table List"
+    },
+    {
+      "id": "ent_plan_flex_floor_map",
+      "planId": "plan_flex",
+      "featureKey": "floor_map",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Visual Floor Map"
+    },
+    {
+      "id": "ent_plan_flex_table_management",
+      "planId": "plan_flex",
+      "featureKey": "table_management",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Table Status Management"
+    },
+    {
+      "id": "ent_plan_flex_staff_onboarding",
+      "planId": "plan_flex",
+      "featureKey": "staff_onboarding",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Invitation Links & Temp Password Onboarding"
+    },
+    {
+      "id": "ent_plan_flex_device_management",
+      "planId": "plan_flex",
+      "featureKey": "device_management",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Device Management & Remote Logout"
+    },
+    {
+      "id": "ent_plan_flex_custom_permissions",
+      "planId": "plan_flex",
+      "featureKey": "custom_permissions",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Custom Staff Permissions"
+    },
+    {
+      "id": "ent_plan_flex_customer_visit_history",
+      "planId": "plan_flex",
+      "featureKey": "customer_visit_history",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Customer Visit History & Returning Recognition"
+    },
+    {
+      "id": "ent_plan_flex_weekly_reports",
+      "planId": "plan_flex",
+      "featureKey": "weekly_reports",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Weekly Sales & Billing Reports"
+    },
+    {
+      "id": "ent_plan_flex_advanced_order_management",
+      "planId": "plan_flex",
+      "featureKey": "advanced_order_management",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Order Management"
+    },
+    {
+      "id": "ent_plan_flex_improved_customer_analytics",
+      "planId": "plan_flex",
+      "featureKey": "improved_customer_analytics",
+      "enabled": false,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Improved Customer Analytics"
+    },
+    {
+      "id": "ent_plan_flex_multi_floor",
+      "planId": "plan_flex",
+      "featureKey": "multi_floor",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Multi-Floor & Multiple Dining Zones"
+    },
+    {
+      "id": "ent_plan_flex_banquet_management",
+      "planId": "plan_flex",
+      "featureKey": "banquet_management",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Banquet & Event Management"
+    },
+    {
+      "id": "ent_plan_flex_advanced_crm",
+      "planId": "plan_flex",
+      "featureKey": "advanced_crm",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Customer Segmentation & CRM Analytics"
+    },
+    {
+      "id": "ent_plan_flex_csv_export",
+      "planId": "plan_flex",
+      "featureKey": "csv_export",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Customer Database CSV Export"
+    },
+    {
+      "id": "ent_plan_flex_financial_exports",
+      "planId": "plan_flex",
+      "featureKey": "financial_exports",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Financial, Zone & Staff Reports"
+    },
+    {
+      "id": "ent_plan_flex_inventory_insights",
+      "planId": "plan_flex",
+      "featureKey": "inventory_insights",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Inventory Insights"
+    },
+    {
+      "id": "ent_plan_flex_api_access",
+      "planId": "plan_flex",
+      "featureKey": "api_access",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "API Integrations"
+    },
+    {
+      "id": "ent_plan_flex_priority_support",
+      "planId": "plan_flex",
+      "featureKey": "priority_support",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Priority 24/7 Telephone Support"
+    },
+    {
+      "id": "ent_plan_flex_multi_branch",
+      "planId": "plan_flex",
+      "featureKey": "multi_branch",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Multi-Branch Restaurant Management"
+    },
+    {
+      "id": "ent_plan_flex_unlimited_staff_devices",
+      "planId": "plan_flex",
+      "featureKey": "unlimited_staff_devices",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Unlimited Staff & Registered Devices"
+    },
+    {
+      "id": "ent_plan_flex_white_label",
+      "planId": "plan_flex",
+      "featureKey": "white_label",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "White-Label Platform"
+    },
+    {
+      "id": "ent_plan_flex_custom_branding",
+      "planId": "plan_flex",
+      "featureKey": "custom_branding",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Branding & Theme Engine"
+    },
+    {
+      "id": "ent_plan_flex_custom_domain",
+      "planId": "plan_flex",
+      "featureKey": "custom_domain",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Domain"
+    },
+    {
+      "id": "ent_plan_flex_pos_integration",
+      "planId": "plan_flex",
+      "featureKey": "pos_integration",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom POS Integration"
+    },
+    {
+      "id": "ent_plan_flex_erp_integration",
+      "planId": "plan_flex",
+      "featureKey": "erp_integration",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom ERP Integration"
+    },
+    {
+      "id": "ent_plan_flex_advanced_api_access",
+      "planId": "plan_flex",
+      "featureKey": "advanced_api_access",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Advanced API Access"
+    },
+    {
+      "id": "ent_plan_flex_dedicated_account_manager",
+      "planId": "plan_flex",
+      "featureKey": "dedicated_account_manager",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Dedicated Account Manager & Custom Onboarding"
+    },
+    {
+      "id": "ent_plan_essential_qr_ordering",
+      "planId": "plan_essential",
+      "featureKey": "qr_ordering",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Customer QR Ordering"
+    },
+    {
+      "id": "ent_plan_essential_digital_menu",
+      "planId": "plan_essential",
+      "featureKey": "digital_menu",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Digital QR Menu & Unlimited Items"
+    },
+    {
+      "id": "ent_plan_essential_kitchen_display",
+      "planId": "plan_essential",
+      "featureKey": "kitchen_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Kitchen Display System (KDS)"
+    },
+    {
+      "id": "ent_plan_essential_waiter_display",
+      "planId": "plan_essential",
+      "featureKey": "waiter_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Waiter Display System"
+    },
+    {
+      "id": "ent_plan_essential_live_order_tracking",
+      "planId": "plan_essential",
+      "featureKey": "live_order_tracking",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Live Order Tracking"
+    },
+    {
+      "id": "ent_plan_essential_table_qr_generation",
+      "planId": "plan_essential",
+      "featureKey": "table_qr_generation",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Table QR Generation"
+    },
+    {
+      "id": "ent_plan_essential_basic_crm",
+      "planId": "plan_essential",
+      "featureKey": "basic_crm",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer CRM"
+    },
+    {
+      "id": "ent_plan_essential_basic_analytics",
+      "planId": "plan_essential",
+      "featureKey": "basic_analytics",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer Analytics"
+    },
+    {
+      "id": "ent_plan_essential_basic_sales_dashboard",
+      "planId": "plan_essential",
+      "featureKey": "basic_sales_dashboard",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Sales Dashboard"
+    },
+    {
+      "id": "ent_plan_essential_basic_staff_accounts",
+      "planId": "plan_essential",
+      "featureKey": "basic_staff_accounts",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Staff Accounts"
+    },
+    {
+      "id": "ent_plan_essential_basic_table_management",
+      "planId": "plan_essential",
+      "featureKey": "basic_table_management",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Floor Table List"
+    },
+    {
+      "id": "ent_plan_essential_floor_map",
+      "planId": "plan_essential",
+      "featureKey": "floor_map",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Visual Floor Map"
+    },
+    {
+      "id": "ent_plan_essential_table_management",
+      "planId": "plan_essential",
+      "featureKey": "table_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Table Status Management"
+    },
+    {
+      "id": "ent_plan_essential_staff_onboarding",
+      "planId": "plan_essential",
+      "featureKey": "staff_onboarding",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Invitation Links & Temp Password Onboarding"
+    },
+    {
+      "id": "ent_plan_essential_device_management",
+      "planId": "plan_essential",
+      "featureKey": "device_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Device Management & Remote Logout"
+    },
+    {
+      "id": "ent_plan_essential_custom_permissions",
+      "planId": "plan_essential",
+      "featureKey": "custom_permissions",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Custom Staff Permissions"
+    },
+    {
+      "id": "ent_plan_essential_customer_visit_history",
+      "planId": "plan_essential",
+      "featureKey": "customer_visit_history",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Customer Visit History & Returning Recognition"
+    },
+    {
+      "id": "ent_plan_essential_weekly_reports",
+      "planId": "plan_essential",
+      "featureKey": "weekly_reports",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Weekly Sales & Billing Reports"
+    },
+    {
+      "id": "ent_plan_essential_advanced_order_management",
+      "planId": "plan_essential",
+      "featureKey": "advanced_order_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Order Management"
+    },
+    {
+      "id": "ent_plan_essential_improved_customer_analytics",
+      "planId": "plan_essential",
+      "featureKey": "improved_customer_analytics",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Improved Customer Analytics"
+    },
+    {
+      "id": "ent_plan_essential_multi_floor",
+      "planId": "plan_essential",
+      "featureKey": "multi_floor",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Multi-Floor & Multiple Dining Zones"
+    },
+    {
+      "id": "ent_plan_essential_banquet_management",
+      "planId": "plan_essential",
+      "featureKey": "banquet_management",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Banquet & Event Management"
+    },
+    {
+      "id": "ent_plan_essential_advanced_crm",
+      "planId": "plan_essential",
+      "featureKey": "advanced_crm",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Customer Segmentation & CRM Analytics"
+    },
+    {
+      "id": "ent_plan_essential_csv_export",
+      "planId": "plan_essential",
+      "featureKey": "csv_export",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Customer Database CSV Export"
+    },
+    {
+      "id": "ent_plan_essential_financial_exports",
+      "planId": "plan_essential",
+      "featureKey": "financial_exports",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Financial, Zone & Staff Reports"
+    },
+    {
+      "id": "ent_plan_essential_inventory_insights",
+      "planId": "plan_essential",
+      "featureKey": "inventory_insights",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Inventory Insights"
+    },
+    {
+      "id": "ent_plan_essential_api_access",
+      "planId": "plan_essential",
+      "featureKey": "api_access",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "API Integrations"
+    },
+    {
+      "id": "ent_plan_essential_priority_support",
+      "planId": "plan_essential",
+      "featureKey": "priority_support",
+      "enabled": false,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Priority 24/7 Telephone Support"
+    },
+    {
+      "id": "ent_plan_essential_multi_branch",
+      "planId": "plan_essential",
+      "featureKey": "multi_branch",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Multi-Branch Restaurant Management"
+    },
+    {
+      "id": "ent_plan_essential_unlimited_staff_devices",
+      "planId": "plan_essential",
+      "featureKey": "unlimited_staff_devices",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Unlimited Staff & Registered Devices"
+    },
+    {
+      "id": "ent_plan_essential_white_label",
+      "planId": "plan_essential",
+      "featureKey": "white_label",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "White-Label Platform"
+    },
+    {
+      "id": "ent_plan_essential_custom_branding",
+      "planId": "plan_essential",
+      "featureKey": "custom_branding",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Branding & Theme Engine"
+    },
+    {
+      "id": "ent_plan_essential_custom_domain",
+      "planId": "plan_essential",
+      "featureKey": "custom_domain",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Domain"
+    },
+    {
+      "id": "ent_plan_essential_pos_integration",
+      "planId": "plan_essential",
+      "featureKey": "pos_integration",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom POS Integration"
+    },
+    {
+      "id": "ent_plan_essential_erp_integration",
+      "planId": "plan_essential",
+      "featureKey": "erp_integration",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom ERP Integration"
+    },
+    {
+      "id": "ent_plan_essential_advanced_api_access",
+      "planId": "plan_essential",
+      "featureKey": "advanced_api_access",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Advanced API Access"
+    },
+    {
+      "id": "ent_plan_essential_dedicated_account_manager",
+      "planId": "plan_essential",
+      "featureKey": "dedicated_account_manager",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Dedicated Account Manager & Custom Onboarding"
+    },
+    {
+      "id": "ent_plan_professional_qr_ordering",
+      "planId": "plan_professional",
+      "featureKey": "qr_ordering",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Customer QR Ordering"
+    },
+    {
+      "id": "ent_plan_professional_digital_menu",
+      "planId": "plan_professional",
+      "featureKey": "digital_menu",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Digital QR Menu & Unlimited Items"
+    },
+    {
+      "id": "ent_plan_professional_kitchen_display",
+      "planId": "plan_professional",
+      "featureKey": "kitchen_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Kitchen Display System (KDS)"
+    },
+    {
+      "id": "ent_plan_professional_waiter_display",
+      "planId": "plan_professional",
+      "featureKey": "waiter_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Waiter Display System"
+    },
+    {
+      "id": "ent_plan_professional_live_order_tracking",
+      "planId": "plan_professional",
+      "featureKey": "live_order_tracking",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Live Order Tracking"
+    },
+    {
+      "id": "ent_plan_professional_table_qr_generation",
+      "planId": "plan_professional",
+      "featureKey": "table_qr_generation",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Table QR Generation"
+    },
+    {
+      "id": "ent_plan_professional_basic_crm",
+      "planId": "plan_professional",
+      "featureKey": "basic_crm",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer CRM"
+    },
+    {
+      "id": "ent_plan_professional_basic_analytics",
+      "planId": "plan_professional",
+      "featureKey": "basic_analytics",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer Analytics"
+    },
+    {
+      "id": "ent_plan_professional_basic_sales_dashboard",
+      "planId": "plan_professional",
+      "featureKey": "basic_sales_dashboard",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Sales Dashboard"
+    },
+    {
+      "id": "ent_plan_professional_basic_staff_accounts",
+      "planId": "plan_professional",
+      "featureKey": "basic_staff_accounts",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Staff Accounts"
+    },
+    {
+      "id": "ent_plan_professional_basic_table_management",
+      "planId": "plan_professional",
+      "featureKey": "basic_table_management",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Floor Table List"
+    },
+    {
+      "id": "ent_plan_professional_floor_map",
+      "planId": "plan_professional",
+      "featureKey": "floor_map",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Visual Floor Map"
+    },
+    {
+      "id": "ent_plan_professional_table_management",
+      "planId": "plan_professional",
+      "featureKey": "table_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Table Status Management"
+    },
+    {
+      "id": "ent_plan_professional_staff_onboarding",
+      "planId": "plan_professional",
+      "featureKey": "staff_onboarding",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Invitation Links & Temp Password Onboarding"
+    },
+    {
+      "id": "ent_plan_professional_device_management",
+      "planId": "plan_professional",
+      "featureKey": "device_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Device Management & Remote Logout"
+    },
+    {
+      "id": "ent_plan_professional_custom_permissions",
+      "planId": "plan_professional",
+      "featureKey": "custom_permissions",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Custom Staff Permissions"
+    },
+    {
+      "id": "ent_plan_professional_customer_visit_history",
+      "planId": "plan_professional",
+      "featureKey": "customer_visit_history",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Customer Visit History & Returning Recognition"
+    },
+    {
+      "id": "ent_plan_professional_weekly_reports",
+      "planId": "plan_professional",
+      "featureKey": "weekly_reports",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Weekly Sales & Billing Reports"
+    },
+    {
+      "id": "ent_plan_professional_advanced_order_management",
+      "planId": "plan_professional",
+      "featureKey": "advanced_order_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Order Management"
+    },
+    {
+      "id": "ent_plan_professional_improved_customer_analytics",
+      "planId": "plan_professional",
+      "featureKey": "improved_customer_analytics",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Improved Customer Analytics"
+    },
+    {
+      "id": "ent_plan_professional_multi_floor",
+      "planId": "plan_professional",
+      "featureKey": "multi_floor",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Multi-Floor & Multiple Dining Zones"
+    },
+    {
+      "id": "ent_plan_professional_banquet_management",
+      "planId": "plan_professional",
+      "featureKey": "banquet_management",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Banquet & Event Management"
+    },
+    {
+      "id": "ent_plan_professional_advanced_crm",
+      "planId": "plan_professional",
+      "featureKey": "advanced_crm",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Customer Segmentation & CRM Analytics"
+    },
+    {
+      "id": "ent_plan_professional_csv_export",
+      "planId": "plan_professional",
+      "featureKey": "csv_export",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Customer Database CSV Export"
+    },
+    {
+      "id": "ent_plan_professional_financial_exports",
+      "planId": "plan_professional",
+      "featureKey": "financial_exports",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Financial, Zone & Staff Reports"
+    },
+    {
+      "id": "ent_plan_professional_inventory_insights",
+      "planId": "plan_professional",
+      "featureKey": "inventory_insights",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Inventory Insights"
+    },
+    {
+      "id": "ent_plan_professional_api_access",
+      "planId": "plan_professional",
+      "featureKey": "api_access",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "API Integrations"
+    },
+    {
+      "id": "ent_plan_professional_priority_support",
+      "planId": "plan_professional",
+      "featureKey": "priority_support",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Priority 24/7 Telephone Support"
+    },
+    {
+      "id": "ent_plan_professional_multi_branch",
+      "planId": "plan_professional",
+      "featureKey": "multi_branch",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Multi-Branch Restaurant Management"
+    },
+    {
+      "id": "ent_plan_professional_unlimited_staff_devices",
+      "planId": "plan_professional",
+      "featureKey": "unlimited_staff_devices",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Unlimited Staff & Registered Devices"
+    },
+    {
+      "id": "ent_plan_professional_white_label",
+      "planId": "plan_professional",
+      "featureKey": "white_label",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "White-Label Platform"
+    },
+    {
+      "id": "ent_plan_professional_custom_branding",
+      "planId": "plan_professional",
+      "featureKey": "custom_branding",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Branding & Theme Engine"
+    },
+    {
+      "id": "ent_plan_professional_custom_domain",
+      "planId": "plan_professional",
+      "featureKey": "custom_domain",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Domain"
+    },
+    {
+      "id": "ent_plan_professional_pos_integration",
+      "planId": "plan_professional",
+      "featureKey": "pos_integration",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom POS Integration"
+    },
+    {
+      "id": "ent_plan_professional_erp_integration",
+      "planId": "plan_professional",
+      "featureKey": "erp_integration",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom ERP Integration"
+    },
+    {
+      "id": "ent_plan_professional_advanced_api_access",
+      "planId": "plan_professional",
+      "featureKey": "advanced_api_access",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Advanced API Access"
+    },
+    {
+      "id": "ent_plan_professional_dedicated_account_manager",
+      "planId": "plan_professional",
+      "featureKey": "dedicated_account_manager",
+      "enabled": false,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Dedicated Account Manager & Custom Onboarding"
+    },
+    {
+      "id": "ent_plan_enterprise_qr_ordering",
+      "planId": "plan_enterprise",
+      "featureKey": "qr_ordering",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Customer QR Ordering"
+    },
+    {
+      "id": "ent_plan_enterprise_digital_menu",
+      "planId": "plan_enterprise",
+      "featureKey": "digital_menu",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Digital QR Menu & Unlimited Items"
+    },
+    {
+      "id": "ent_plan_enterprise_kitchen_display",
+      "planId": "plan_enterprise",
+      "featureKey": "kitchen_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Kitchen Display System (KDS)"
+    },
+    {
+      "id": "ent_plan_enterprise_waiter_display",
+      "planId": "plan_enterprise",
+      "featureKey": "waiter_display",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Waiter Display System"
+    },
+    {
+      "id": "ent_plan_enterprise_live_order_tracking",
+      "planId": "plan_enterprise",
+      "featureKey": "live_order_tracking",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Live Order Tracking"
+    },
+    {
+      "id": "ent_plan_enterprise_table_qr_generation",
+      "planId": "plan_enterprise",
+      "featureKey": "table_qr_generation",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Table QR Generation"
+    },
+    {
+      "id": "ent_plan_enterprise_basic_crm",
+      "planId": "plan_enterprise",
+      "featureKey": "basic_crm",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer CRM"
+    },
+    {
+      "id": "ent_plan_enterprise_basic_analytics",
+      "planId": "plan_enterprise",
+      "featureKey": "basic_analytics",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Customer Analytics"
+    },
+    {
+      "id": "ent_plan_enterprise_basic_sales_dashboard",
+      "planId": "plan_enterprise",
+      "featureKey": "basic_sales_dashboard",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Sales Dashboard"
+    },
+    {
+      "id": "ent_plan_enterprise_basic_staff_accounts",
+      "planId": "plan_enterprise",
+      "featureKey": "basic_staff_accounts",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Staff Accounts"
+    },
+    {
+      "id": "ent_plan_enterprise_basic_table_management",
+      "planId": "plan_enterprise",
+      "featureKey": "basic_table_management",
+      "enabled": true,
+      "minPlanId": "plan_flex",
+      "minPlanName": "Flex",
+      "label": "Basic Floor Table List"
+    },
+    {
+      "id": "ent_plan_enterprise_floor_map",
+      "planId": "plan_enterprise",
+      "featureKey": "floor_map",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Visual Floor Map"
+    },
+    {
+      "id": "ent_plan_enterprise_table_management",
+      "planId": "plan_enterprise",
+      "featureKey": "table_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Table Status Management"
+    },
+    {
+      "id": "ent_plan_enterprise_staff_onboarding",
+      "planId": "plan_enterprise",
+      "featureKey": "staff_onboarding",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Invitation Links & Temp Password Onboarding"
+    },
+    {
+      "id": "ent_plan_enterprise_device_management",
+      "planId": "plan_enterprise",
+      "featureKey": "device_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Staff Device Management & Remote Logout"
+    },
+    {
+      "id": "ent_plan_enterprise_custom_permissions",
+      "planId": "plan_enterprise",
+      "featureKey": "custom_permissions",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Custom Staff Permissions"
+    },
+    {
+      "id": "ent_plan_enterprise_customer_visit_history",
+      "planId": "plan_enterprise",
+      "featureKey": "customer_visit_history",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Customer Visit History & Returning Recognition"
+    },
+    {
+      "id": "ent_plan_enterprise_weekly_reports",
+      "planId": "plan_enterprise",
+      "featureKey": "weekly_reports",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Weekly Sales & Billing Reports"
+    },
+    {
+      "id": "ent_plan_enterprise_advanced_order_management",
+      "planId": "plan_enterprise",
+      "featureKey": "advanced_order_management",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Advanced Order Management"
+    },
+    {
+      "id": "ent_plan_enterprise_improved_customer_analytics",
+      "planId": "plan_enterprise",
+      "featureKey": "improved_customer_analytics",
+      "enabled": true,
+      "minPlanId": "plan_essential",
+      "minPlanName": "Essential",
+      "label": "Improved Customer Analytics"
+    },
+    {
+      "id": "ent_plan_enterprise_multi_floor",
+      "planId": "plan_enterprise",
+      "featureKey": "multi_floor",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Multi-Floor & Multiple Dining Zones"
+    },
+    {
+      "id": "ent_plan_enterprise_banquet_management",
+      "planId": "plan_enterprise",
+      "featureKey": "banquet_management",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Banquet & Event Management"
+    },
+    {
+      "id": "ent_plan_enterprise_advanced_crm",
+      "planId": "plan_enterprise",
+      "featureKey": "advanced_crm",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Customer Segmentation & CRM Analytics"
+    },
+    {
+      "id": "ent_plan_enterprise_csv_export",
+      "planId": "plan_enterprise",
+      "featureKey": "csv_export",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Customer Database CSV Export"
+    },
+    {
+      "id": "ent_plan_enterprise_financial_exports",
+      "planId": "plan_enterprise",
+      "featureKey": "financial_exports",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Advanced Financial, Zone & Staff Reports"
+    },
+    {
+      "id": "ent_plan_enterprise_inventory_insights",
+      "planId": "plan_enterprise",
+      "featureKey": "inventory_insights",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Inventory Insights"
+    },
+    {
+      "id": "ent_plan_enterprise_api_access",
+      "planId": "plan_enterprise",
+      "featureKey": "api_access",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "API Integrations"
+    },
+    {
+      "id": "ent_plan_enterprise_priority_support",
+      "planId": "plan_enterprise",
+      "featureKey": "priority_support",
+      "enabled": true,
+      "minPlanId": "plan_professional",
+      "minPlanName": "Professional",
+      "label": "Priority 24/7 Telephone Support"
+    },
+    {
+      "id": "ent_plan_enterprise_multi_branch",
+      "planId": "plan_enterprise",
+      "featureKey": "multi_branch",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Multi-Branch Restaurant Management"
+    },
+    {
+      "id": "ent_plan_enterprise_unlimited_staff_devices",
+      "planId": "plan_enterprise",
+      "featureKey": "unlimited_staff_devices",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Unlimited Staff & Registered Devices"
+    },
+    {
+      "id": "ent_plan_enterprise_white_label",
+      "planId": "plan_enterprise",
+      "featureKey": "white_label",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "White-Label Platform"
+    },
+    {
+      "id": "ent_plan_enterprise_custom_branding",
+      "planId": "plan_enterprise",
+      "featureKey": "custom_branding",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Branding & Theme Engine"
+    },
+    {
+      "id": "ent_plan_enterprise_custom_domain",
+      "planId": "plan_enterprise",
+      "featureKey": "custom_domain",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom Domain"
+    },
+    {
+      "id": "ent_plan_enterprise_pos_integration",
+      "planId": "plan_enterprise",
+      "featureKey": "pos_integration",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom POS Integration"
+    },
+    {
+      "id": "ent_plan_enterprise_erp_integration",
+      "planId": "plan_enterprise",
+      "featureKey": "erp_integration",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Custom ERP Integration"
+    },
+    {
+      "id": "ent_plan_enterprise_advanced_api_access",
+      "planId": "plan_enterprise",
+      "featureKey": "advanced_api_access",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Advanced API Access"
+    },
+    {
+      "id": "ent_plan_enterprise_dedicated_account_manager",
+      "planId": "plan_enterprise",
+      "featureKey": "dedicated_account_manager",
+      "enabled": true,
+      "minPlanId": "plan_enterprise",
+      "minPlanName": "Enterprise",
+      "label": "Dedicated Account Manager & Custom Onboarding"
+    }
+  ],
+  "subscriptionEvents": [],
+  "floorZones": [],
+  "banquets": [],
+  "apiKeys": [],
+  "enterpriseBranches": [],
+  "whiteLabelConfigs": [],
+  "integrationConfigs": []
+}

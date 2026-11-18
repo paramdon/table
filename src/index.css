@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --primary: #F76707;
+    --primary-dark: #A14000;
+    --charcoal: #18181B;
+    --surface-bg: #FAFAFA;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --surface-bg: #09090B;
+  }
+
+  html, body {
+    font-family: var(--font-body);
+    background-color: var(--surface-bg);
+    color: #18181B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .dark body,
+  html.dark {
+    background-color: #09090B;
+    color: #F4F4F5;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .tnum {
+    font-feature-settings: "tnum" 1, "lnum" 1;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom hide scrollbars for clean category horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

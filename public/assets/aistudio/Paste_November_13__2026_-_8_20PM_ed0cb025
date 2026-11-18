@@ -1,0 +1,1236 @@
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+# d.cc — Complete SaaS Subscription, Pricing, Entitlements & Commission Management System
+
+**Product:** d.cc — Smart Restaurant QR Ordering SaaS  
+**Module:** Subscription & Monetization Engine  
+**Priority:** Critical  
+**Implementation:** Existing application, existing backend and database  
+**Primary users:** Restaurant Owners, Managers and d.cc Platform Administrators
+
+---
+
+# 1. PRODUCT OBJECTIVE
+
+Build a complete, production-oriented subscription and monetization system for d.cc.
+
+d.cc offers four subscription plans:
+
+1. Flex — ₹0/month + 3% commission
+2. Essential — ₹1,999/month + 2% commission
+3. Professional — ₹4,999/month + 0.75% commission
+4. Enterprise — ₹9,999/month + 0% platform commission
+
+The system must:
+
+- Display all four plans professionally.
+- Explain differences between plans.
+- Control feature access based on the active subscription.
+- Calculate commission automatically.
+- Manage recurring subscriptions and payments.
+- Support upgrades and downgrades.
+- Generate invoices and billing reports.
+- Provide owners with subscription and commission visibility.
+- Give platform administrators centralized subscription controls.
+
+**Core architecture principle:** Every subscription-related operation must use one centralized, database-backed subscription entitlement engine.
+
+Do not implement four independent sets of frontend conditions.
+
+Do not create a UI-only pricing page.
+
+---
+
+# 2. SUBSCRIPTION PLAN DEFINITIONS
+
+## PLAN A — FLEX
+
+**Price:** ₹0/month  
+**Platform commission:** 3% per eligible QR order  
+**Target customers:** Small restaurants, cafes, food outlets and businesses trying QR ordering for the first time.
+
+### Included features
+
+**Digital Menu**
+- Digital restaurant menu.
+- Unlimited menu categories.
+- Unlimited menu items.
+- Item descriptions and images.
+- Item prices.
+- Vegetarian and non-vegetarian labels.
+- Item availability controls.
+- Menu customization options.
+
+**QR Ordering**
+- Customer-facing QR menu.
+- Table-specific QR codes.
+- Customer cart.
+- Order placement.
+- Order status tracking.
+- Order history.
+- Basic order notifications.
+
+**Kitchen & Waiter**
+- Kitchen Display System.
+- Waiter Display System.
+- Live order updates.
+- Order preparation status.
+- Ready-for-pickup notifications.
+- Waiter assistance requests.
+
+**Customer CRM**
+- Basic customer profiles.
+- Customer name and phone number.
+- Basic customer order history.
+- First and last visit.
+- Basic customer statistics.
+
+**Restaurant Management**
+- Basic table management.
+- Table QR generation.
+- Basic staff accounts.
+- Basic sales dashboard.
+- Basic order analytics.
+- Standard support.
+
+### Not included
+- Advanced visual floor map.
+- Advanced device management.
+- Remote staff device revocation.
+- Advanced CRM segmentation.
+- Advanced financial exports.
+- Multi-floor management.
+- Banquet management.
+- Multi-branch management.
+- White-labeling.
+
+---
+
+## PLAN B — ESSENTIAL
+
+**Price:** ₹1,999/month  
+**Platform commission:** 2% per eligible QR order  
+**Target customers:** Growing cafes, family restaurants and busy dining establishments.
+
+Includes everything in Flex.
+
+### Additional features
+
+**Floor & Table Management**
+- Visual restaurant floor map.
+- Drag-and-drop table layout.
+- Multiple table sections within the restaurant.
+- Table status management.
+- Available, occupied, reserved and billing states.
+- Table transfer.
+- Table merging where supported.
+- Table-specific order overview.
+
+**Staff Management**
+- Owner-created staff profiles.
+- Staff invitation links.
+- Username and temporary password onboarding.
+- Forced password change on first login.
+- Staff role assignment.
+- Basic custom permissions.
+- Staff account activation and deactivation.
+
+**Smart Device Management**
+- One-time staff device registration.
+- Secure remembered staff sessions.
+- Device identification and registration history.
+- Registered device list.
+- Last active information.
+- Remote device logout.
+- Individual device revocation.
+- Revoke all sessions for an employee.
+- Force staff reauthentication.
+
+**Customer CRM**
+- Customer visit history.
+- Returning customer recognition.
+- Customer order frequency.
+- Customer spending summary.
+- Customer profiles linked to order history.
+
+**Reports**
+- Weekly sales reports.
+- Weekly billing reports.
+- Table performance summary.
+- Staff activity overview.
+- Advanced order management.
+
+---
+
+## PLAN C — PROFESSIONAL
+
+**Price:** ₹4,999/month  
+**Platform commission:** 0.75% per eligible QR order  
+**Target customers:** High-volume restaurants, large dining spaces, multi-floor restaurants and banquet venues.
+
+Includes everything in Essential.
+
+### Additional features
+
+**Advanced Restaurant Layout**
+- Multiple floors.
+- Multiple dining zones.
+- Multiple service areas.
+- Banquet management.
+- Separate table groups.
+- Zone-wise order monitoring.
+- Zone-wise sales reporting.
+
+**Advanced CRM**
+- Customer segmentation.
+- New versus returning customer analysis.
+- Frequent customer identification.
+- Spending-based segments.
+- Visit-frequency analysis.
+- Popular item preferences.
+- Customer retention analytics.
+- Customer database export.
+- CSV export.
+
+**Advanced Analytics**
+- Daily, weekly and monthly sales reports.
+- Revenue trends.
+- Average order value.
+- Order volume trends.
+- Peak ordering periods.
+- Popular menu items.
+- Category performance.
+- Table utilization reports.
+- Floor-wise sales.
+- Zone-wise performance.
+
+**Financial Reporting**
+- Advanced financial dashboard.
+- Gross order value.
+- Discounts.
+- Refunds.
+- Platform commission.
+- Net eligible QR order value.
+- Sales summaries.
+- Exportable financial reports.
+
+**Staff Analytics**
+- Staff activity reports.
+- Order handling performance.
+- Order preparation timing.
+- Waiter request handling.
+- Staff performance summaries.
+
+**Integrations & Support**
+- API access, subject to configured API limits and permissions.
+- Supported third-party integrations.
+- Priority 24/7 telephone support.
+
+---
+
+## PLAN D — ENTERPRISE
+
+**Price:** ₹9,999/month starting price  
+**Platform commission:** 0% d.cc platform commission  
+**Target customers:** Restaurant chains, hotels, resorts and large restaurant groups.
+
+Includes everything in Professional.
+
+### Additional features
+
+**Multi-Branch Management**
+- Multiple restaurant branches.
+- Centralized brand dashboard.
+- Branch-wise management.
+- Branch-wise analytics.
+- Branch-wise sales reports.
+- Branch-wise commission reports.
+- Centralized subscription management.
+- Branch-level staff management.
+- Branch-specific menu configuration.
+- Shared customer identity across authorized branches.
+- Individual branch performance comparison.
+
+**Enterprise Access Management**
+- Unlimited staff accounts.
+- Unlimited registered staff devices.
+- Advanced role permissions.
+- Centralized staff administration.
+- Organization-level access controls.
+- Branch-specific permissions.
+
+**Branding**
+- Custom domain.
+- White-label platform.
+- Custom restaurant branding.
+- Custom logo.
+- Custom theme and colors.
+- Branded customer ordering experience.
+
+**Enterprise Integrations**
+- Custom POS integration.
+- Custom ERP integration.
+- Advanced API access.
+- Custom integration workflows.
+- Integration configuration and monitoring.
+
+**Enterprise Services**
+- Dedicated account manager.
+- Custom onboarding.
+- Priority technical support.
+- Custom implementation assistance.
+
+Important: Enterprise customization and integrations may require separate setup fees or a negotiated contract. Do not promise unlimited custom development under the ₹9,999 subscription.
+
+---
+
+# 3. MASTER FEATURE COMPARISON
+
+Create a centralized plan comparison configuration.
+
+Use this as the source of truth for both the pricing page and feature entitlement system.
+
+| Feature | Flex | Essential | Professional | Enterprise |
+|---|---|---|---|---|
+| Monthly price | ₹0 | ₹1,999 | ₹4,999 | ₹9,999 |
+| QR commission | 3% | 2% | 0.75% | 0% |
+| Digital menu | Yes | Yes | Yes | Yes |
+| Unlimited menu items | Yes | Yes | Yes | Yes |
+| QR ordering | Yes | Yes | Yes | Yes |
+| Kitchen display | Yes | Yes | Yes | Yes |
+| Waiter display | Yes | Yes | Yes | Yes |
+| Live order tracking | Yes | Yes | Yes | Yes |
+| Basic CRM | Yes | Yes | Yes | Yes |
+| Basic analytics | Yes | Yes | Yes | Yes |
+| Table QR codes | Yes | Yes | Yes | Yes |
+| Visual floor map | No | Yes | Yes | Yes |
+| Advanced table management | No | Yes | Yes | Yes |
+| Staff invitation links | No | Yes | Yes | Yes |
+| Smart device onboarding | No | Yes | Yes | Yes |
+| Remote device logout | No | Yes | Yes | Yes |
+| Custom staff permissions | No | Yes | Yes | Yes |
+| Customer visit history | No | Yes | Yes | Yes |
+| Weekly sales reports | No | Yes | Yes | Yes |
+| Multi-floor management | No | No | Yes | Yes |
+| Banquet management | No | No | Yes | Yes |
+| Advanced CRM segmentation | No | No | Yes | Yes |
+| Customer CSV export | No | No | Yes | Yes |
+| Advanced financial reports | No | No | Yes | Yes |
+| Staff activity reports | No | No | Yes | Yes |
+| API integrations | No | No | Yes | Yes |
+| Multi-branch management | No | No | No | Yes |
+| Centralized brand dashboard | No | No | No | Yes |
+| Unlimited staff/devices | No | No | No | Yes |
+| Custom domain | No | No | No | Yes |
+| White-labeling | No | No | No | Yes |
+| Custom POS/ERP integration | No | No | No | Yes |
+| Dedicated account manager | No | No | No | Yes |
+
+Important: Core customer ordering, kitchen operations and waiter operations must never be artificially disabled on a paid-plan boundary.
+
+---
+
+# 4. PRICING PAGE
+
+Create a premium, modern SaaS pricing page consistent with the d.cc brand.
+
+### Pricing cards
+
+Each card must show:
+
+- Plan name.
+- Monthly subscription price.
+- Commission rate.
+- Target restaurant description.
+- Main benefits.
+- Complete feature list.
+- Current plan indicator.
+- Upgrade or downgrade button.
+
+### Visual hierarchy
+
+Flex:
+- Entry-level plan.
+- Clear ₹0 monthly pricing.
+
+Essential:
+- Highlight as MOST POPULAR.
+- Visually recommended plan.
+- Emphasize floor management and staff automation.
+
+Professional:
+- Highlight advanced analytics and low commission.
+
+Enterprise:
+- Highlight zero platform commission, multi-branch management and white-labeling.
+
+### Comparison table
+
+Below the pricing cards, display an expandable feature comparison table.
+
+Group features into:
+
+1. Digital Menu & Ordering
+2. Kitchen & Waiter Operations
+3. Table & Floor Management
+4. Staff & Device Management
+5. Customer CRM
+6. Analytics & Financial Reports
+7. Multi-Branch Operations
+8. Branding & Integrations
+9. Support
+
+Allow users to expand each category.
+
+The pricing page must be responsive on mobile, tablet and desktop.
+
+### Pricing explanations
+
+Clearly explain:
+- Monthly subscription.
+- QR order commission.
+- Eligible order value.
+- Payment gateway charges.
+- Applicable taxes.
+- Upgrade and downgrade conditions.
+
+Never advertise payment gateway fees as zero unless confirmed by the actual provider.
+
+---
+
+# 5. CENTRALIZED ENTITLEMENT ENGINE
+
+This is one of the most important components.
+
+Build a centralized subscription entitlement service.
+
+Every restaurant has one active subscription plan, and all application modules must consult the same entitlement service.
+
+Example logical feature keys:
+
+```text
+qr_ordering
+digital_menu
+kitchen_display
+waiter_display
+basic_crm
+basic_analytics
+table_qr_generation
+floor_map
+advanced_table_management
+staff_invitation
+staff_onboarding
+device_management
+remote_device_logout
+custom_staff_permissions
+customer_visit_history
+weekly_reports
+multi_floor
+banquet_management
+advanced_crm
+crm_export
+advanced_financial_reports
+staff_activity_reports
+api_access
+multi_branch
+centralized_dashboard
+unlimited_staff
+unlimited_devices
+custom_domain
+white_label
+pos_integration
+erp_integration
+dedicated_account_manager
+```
+
+### Backend rules
+
+- Check plan entitlement before executing protected operations.
+- Validate restaurant subscription status.
+- Validate restaurant ownership and role.
+- Validate branch permissions where applicable.
+- Reject unauthorized requests server-side.
+- Never trust frontend plan IDs.
+- Never trust client-supplied commission rates.
+- Never allow users to modify their own subscription plan directly.
+- Never rely on hiding frontend buttons as a security measure.
+
+### Frontend rules
+
+When a user accesses a locked feature:
+
+Show an upgrade dialog containing:
+
+- Feature name.
+- Short feature description.
+- Required plan.
+- Current plan.
+- Upgrade button.
+
+Example:
+
+"Advanced Floor Map is available with Essential and higher plans."
+
+Provide a clear upgrade path to the relevant plan.
+
+---
+
+# 6. DATABASE ARCHITECTURE
+
+Inspect the existing database before creating migrations.
+
+Reuse existing tables where appropriate.
+
+Do not create duplicate restaurant, customer, order or subscription entities.
+
+Implement the following logical database structures.
+
+## A. subscription_plans
+
+Fields:
+- id
+- plan_code
+- plan_name
+- monthly_price
+- currency
+- commission_rate
+- description
+- is_active
+- created_at
+- updated_at
+
+Plan codes:
+- flex
+- essential
+- professional
+- enterprise
+
+## B. plan_entitlements
+
+Fields:
+- id
+- plan_id
+- feature_key
+- enabled
+- configuration
+- created_at
+- updated_at
+
+Use configuration for any future numeric limits or plan-specific settings.
+
+## C. restaurant_subscriptions
+
+Fields:
+- id
+- restaurant_id
+- plan_id
+- status
+- billing_cycle
+- start_date
+- current_period_start
+- current_period_end
+- next_billing_date
+- gateway_subscription_id
+- created_at
+- updated_at
+
+## D. commission_ledger
+
+Fields:
+- id
+- restaurant_id
+- order_id
+- subscription_id
+- plan_code_snapshot
+- commission_rate_snapshot
+- eligible_order_amount
+- commission_amount
+- refund_adjustment
+- currency
+- status
+- created_at
+
+Add a unique constraint or idempotency key to prevent duplicate commission entries for the same order and calculation event.
+
+## E. subscription_invoices
+
+Fields:
+- id
+- restaurant_id
+- subscription_id
+- invoice_number
+- subtotal
+- tax_amount
+- total_amount
+- currency
+- payment_status
+- gateway_payment_id
+- invoice_url
+- issue_date
+- due_date
+- created_at
+
+## F. subscription_events
+
+Fields:
+- id
+- restaurant_id
+- subscription_id
+- event_type
+- old_plan
+- new_plan
+- effective_date
+- metadata
+- created_at
+
+## G. subscription_payments
+
+Fields:
+- id
+- restaurant_id
+- subscription_id
+- amount
+- currency
+- gateway
+- gateway_order_id
+- gateway_payment_id
+- status
+- paid_at
+- created_at
+
+Use appropriate indexes, foreign keys, database constraints and tenant-level access policies.
+
+Do not duplicate existing tables if equivalent structures already exist.
+
+---
+
+# 7. COMMISSION CALCULATION ENGINE
+
+Commission calculation must happen on the trusted backend.
+
+Plan rates:
+
+| Plan | Commission |
+|---|---:|
+| Flex | 3% |
+| Essential | 2% |
+| Professional | 0.75% |
+| Enterprise | 0% |
+
+### Commission calculation formula
+
+```text
+Eligible Order Amount =
+Menu Item Subtotal
+- Item Discounts
+- Eligible Refunds
+
+Platform Commission =
+Eligible Order Amount × Applicable Commission Rate
+```
+
+Define the commission base consistently.
+
+Recommended rules:
+
+- Exclude GST and other collected taxes.
+- Exclude tips.
+- Exclude delivery charges where applicable.
+- Exclude cancelled orders.
+- Exclude fully refunded order value.
+- Apply partial refunds proportionally.
+- Avoid charging commission on gateway fees.
+- Store the calculation breakdown for audit purposes.
+
+### Example calculations
+
+For an eligible QR order of ₹1,000:
+
+| Plan | Commission |
+|---|---:|
+| Flex | ₹30 |
+| Essential | ₹20 |
+| Professional | ₹7.50 |
+| Enterprise | ₹0 |
+
+### Important implementation rules
+
+1. Calculate commission using the restaurant's applicable subscription at the order's commission-lock event.
+2. Store the plan and rate snapshot against the order/ledger entry.
+3. Do not recalculate old orders using the restaurant's current plan.
+4. Use idempotent commission creation.
+5. Handle partial and full refunds.
+6. Support audit trails.
+7. Never calculate the final payable commission using untrusted frontend values.
+
+Define exactly when the commission becomes payable and how settlements are reconciled.
+
+If d.cc uses direct restaurant-to-gateway payments, implement commission collection as a separate, clearly documented workflow. Do not assume that a QR order payment automatically transfers the platform's commission to d.cc.
+
+---
+
+# 8. SUBSCRIPTION BILLING & PAYMENT
+
+Inspect the current payment integration.
+
+Reuse the configured payment provider where available. Do not invent a completed payment integration.
+
+For India, support the configured provider's available subscription and payment methods, such as UPI, cards or net banking where supported.
+
+### Subscription activation
+
+1. Owner selects a paid plan.
+2. Backend creates a payment or subscription request.
+3. Customer completes payment.
+4. Payment gateway sends a signed webhook.
+5. Backend verifies the webhook.
+6. Backend confirms the payment with the gateway where required.
+7. Subscription becomes active.
+8. Entitlements update.
+9. Invoice is generated.
+10. Owner receives confirmation.
+
+Never activate a paid plan based only on a frontend success redirect.
+
+### Recurring billing
+
+Support:
+- Subscription renewal.
+- Payment success.
+- Payment failure.
+- Retry policy.
+- Expired subscriptions.
+- Cancellation.
+- Renewal notifications.
+- Invoice history.
+
+### Failed payments
+
+Create a configurable retry and grace-period policy.
+
+During grace periods:
+- Clearly inform the Owner about payment status.
+- Preserve access to core ordering.
+- Do not silently convert a paid plan to Flex.
+- Apply the documented billing policy.
+
+### Invoice generation
+
+Generate professional invoices with:
+
+- d.cc business information.
+- Restaurant/customer billing details.
+- Invoice number.
+- Subscription plan.
+- Billing period.
+- Subscription fee.
+- Applicable taxes.
+- Total payable.
+- Payment status.
+
+Do not hardcode GST rates or business tax details. Make them configurable and obtain the correct business configuration before production use.
+
+---
+
+# 9. UPGRADE AND DOWNGRADE SYSTEM
+
+Inside Owner Dashboard:
+
+**Billing & Subscription → Change Plan**
+
+Display all plans and their differences.
+
+### Upgrade
+
+When a restaurant upgrades:
+
+1. Display new plan details.
+2. Display the new subscription amount.
+3. Explain the new commission rate.
+4. Show any prorated adjustment if supported.
+5. Collect payment when required.
+6. Verify payment server-side.
+7. Activate new entitlements.
+8. Record the subscription event.
+
+### Downgrade
+
+When a restaurant downgrades:
+
+1. Show the target plan.
+2. Show which features will become unavailable.
+3. Explain when the downgrade takes effect.
+4. Allow confirmation or cancellation.
+5. Preserve existing data.
+6. Do not silently delete information.
+7. Disable new access to restricted features at the effective time.
+8. Preserve historical reports and order records.
+
+### Existing plan data
+
+If a restaurant has an existing subscription:
+
+- Migrate it safely.
+- Preserve its billing history.
+- Do not reset customer or restaurant data.
+- Do not automatically charge customers again.
+- Do not change historical commission calculations.
+
+Make the effective timing and proration policy explicit and configurable.
+
+---
+
+# 10. OWNER BILLING DASHBOARD
+
+Create a dedicated section:
+
+**Owner Dashboard → Billing & Subscription**
+
+### Section A: Current Plan
+
+Display:
+- Current plan name.
+- Monthly subscription fee.
+- Commission rate.
+- Subscription status.
+- Next billing date.
+- Subscription period.
+- Upgrade button.
+
+### Section B: QR Order Commission
+
+Display:
+- Total eligible QR order value.
+- Total cancelled orders.
+- Total refunded amount.
+- Commission rate.
+- Total platform commission.
+- Outstanding commission.
+- Settled commission.
+- Commission adjustment history.
+
+### Section C: Subscription Usage
+
+Display:
+- Active staff count.
+- Registered device count.
+- Branch count.
+- Active feature list.
+- Locked features.
+- Subscription entitlements.
+
+### Section D: Billing History
+
+Display:
+- Invoice number.
+- Date.
+- Plan.
+- Amount.
+- Payment status.
+- Download invoice action.
+
+### Section E: Change Plan
+
+Display the four plans with:
+- Price.
+- Commission.
+- Feature comparison.
+- Upgrade/downgrade controls.
+
+---
+
+# 11. PLATFORM ADMINISTRATOR DASHBOARD
+
+Create or extend the internal d.cc platform administrator dashboard.
+
+This dashboard must be separate from restaurant Owner access.
+
+Only authorized d.cc platform administrators can access it.
+
+### Subscription management
+
+Display:
+- Total restaurants.
+- Active Flex restaurants.
+- Active Essential restaurants.
+- Active Professional restaurants.
+- Active Enterprise restaurants.
+- Paid subscriptions.
+- Expired subscriptions.
+- Failed payments.
+- Cancelled subscriptions.
+
+### Revenue analytics
+
+Display:
+- Monthly recurring revenue.
+- Subscription revenue.
+- Platform commission revenue.
+- Total platform revenue.
+- Average revenue per restaurant.
+- Plan conversion rates.
+- Upgrade and downgrade trends.
+- Churn rate.
+
+Distinguish booked, collected and outstanding revenue.
+
+### Administrator actions
+
+Allow authorized administrators to:
+- View restaurant subscriptions.
+- View subscription history.
+- View commission ledger.
+- View invoices and payment status.
+- Resolve billing issues.
+- Apply documented promotional credits.
+- Grant time-limited plan trials.
+- Suspend subscriptions for policy violations.
+- Review payment webhook events.
+
+Every administrative change must be audited.
+
+Do not provide administrators with a way to manipulate paid subscription status without a recorded reason and audit event.
+
+---
+
+# 12. MULTI-RESTAURANT & MULTI-BRANCH LOGIC
+
+Every subscription belongs to a restaurant or organization.
+
+For non-Enterprise plans:
+- Subscription belongs to one restaurant.
+- No cross-restaurant data access.
+- No centralized multi-branch management.
+
+For Enterprise:
+- Organization-level subscription.
+- Multiple authorized branches.
+- Centralized billing configuration.
+- Branch-specific data isolation.
+- Centralized reporting.
+
+Enterprise branch pricing must be configurable.
+
+Do not assume ₹9,999 covers unlimited branches without a defined commercial policy.
+
+Ensure branch-level employees only see authorized branches.
+
+---
+
+# 13. API AND BACKEND REQUIREMENTS
+
+Create or extend backend services for:
+
+- getCurrentSubscription
+- getAvailablePlans
+- getPlanEntitlements
+- checkFeatureAccess
+- createSubscription
+- verifySubscriptionPayment
+- upgradeSubscription
+- scheduleDowngrade
+- cancelSubscription
+- renewSubscription
+- calculateOrderCommission
+- createCommissionLedgerEntry
+- processRefundAdjustment
+- getCommissionReport
+- getInvoiceHistory
+- generateInvoice
+- processPaymentWebhook
+- getPlatformBillingAnalytics
+
+These are logical service operations; adapt their implementation to the existing application architecture.
+
+All sensitive operations must run on the backend.
+
+### Security requirements
+
+- Verify authentication.
+- Verify restaurant ownership and roles.
+- Enforce restaurant-level data isolation.
+- Validate subscription status.
+- Validate feature entitlements.
+- Verify payment webhooks.
+- Use idempotency keys.
+- Protect against replayed payment events.
+- Never expose secret gateway keys to the frontend.
+- Record sensitive billing events.
+- Apply appropriate database row-level security policies if using Supabase.
+
+---
+
+# 14. USER EXPERIENCE REQUIREMENTS
+
+The system must be simple for restaurant owners.
+
+When an Owner opens Billing & Subscription, they should immediately understand:
+
+1. Which plan they currently have.
+2. How much they pay monthly.
+3. How much commission they pay.
+4. What features are included.
+5. What features are locked.
+6. How much they owe.
+7. When their next billing date is.
+8. How to upgrade.
+
+Use clear language and avoid confusing financial terminology.
+
+Provide tooltips for:
+- Platform commission.
+- Eligible QR order value.
+- Subscription fee.
+- Payment gateway charges.
+- Refund adjustments.
+- Proration.
+
+All screens must be mobile-responsive.
+
+---
+
+# 15. DESIGN REQUIREMENTS
+
+Use the existing d.cc design system.
+
+Visual direction:
+- Premium restaurant technology SaaS.
+- Modern, clean dashboard.
+- Professional typography.
+- Clear visual hierarchy.
+- Consistent spacing.
+- Responsive layout.
+- Accessible contrast.
+- Smooth but subtle transitions.
+
+Do not redesign the entire application.
+
+Create reusable components:
+- PricingCard
+- PlanComparisonTable
+- SubscriptionStatusCard
+- CommissionSummaryCard
+- InvoiceTable
+- UpgradePlanModal
+- DowngradeConfirmationModal
+- FeatureLockedModal
+- BillingHistory
+- SubscriptionUsageCard
+
+Use consistent design tokens from the existing project.
+
+---
+
+# 16. ACCEPTANCE TESTS
+
+Do not consider the implementation complete until these tests pass.
+
+### Plan creation and defaults
+
+1. New restaurant receives Flex by default.
+2. Flex subscription is stored in the database.
+3. Correct 3% commission rate is applied.
+4. Plan details remain after refresh and re-login.
+
+### Feature entitlements
+
+5. Flex can use all core ordering features.
+6. Flex cannot access Essential-only advanced device management.
+7. Essential unlocks staff invitation and remote device revocation.
+8. Professional unlocks multi-floor and banquet management.
+9. Enterprise unlocks multi-branch and white-label features.
+10. Unauthorized API calls are rejected.
+11. Frontend cannot override plan entitlements.
+
+### Commission calculations
+
+12. Flex calculates 3% correctly.
+13. Essential calculates 2% correctly.
+14. Professional calculates 0.75% correctly.
+15. Enterprise calculates 0%.
+16. Cancelled orders do not generate commission.
+17. Partial refunds generate correct adjustments.
+18. Duplicate webhooks do not create duplicate commission entries.
+19. Historical commission uses the original plan snapshot.
+
+### Billing
+
+20. Paid subscription requires verified payment.
+21. Invalid webhook signatures are rejected.
+22. Payment failure does not activate a paid plan.
+23. Successful payment activates the correct plan.
+24. Invoices are generated correctly.
+25. Subscription history persists.
+26. Cancellation follows the configured policy.
+27. Downgrades preserve historical data.
+
+### Tenant isolation
+
+28. Restaurant A cannot view Restaurant B billing records.
+29. Restaurant A cannot access Restaurant B commission ledger.
+30. Staff cannot change their restaurant subscription.
+31. Enterprise branch permissions are enforced.
+
+### User experience
+
+32. Pricing cards show correct information.
+33. Feature comparison matches actual entitlements.
+34. Upgrade prompts show the correct required plan.
+35. Owner can access complete billing history.
+36. Dashboard works on mobile and desktop.
+
+---
+
+# 17. IMPLEMENTATION PHASES
+
+Implement this in controlled stages.
+
+## Phase 1 — Audit
+
+Inspect:
+- Existing database.
+- Existing authentication.
+- Existing restaurant structure.
+- Existing order and refund workflow.
+- Existing QR ordering.
+- Existing payment integrations.
+- Existing Owner Dashboard.
+- Existing subscription implementation, if any.
+
+Identify reusable code and migration risks.
+
+Do not change existing production data during the audit.
+
+## Phase 2 — Plan and Entitlement Engine
+
+- Create plan catalog.
+- Create plan entitlements.
+- Create restaurant subscription mapping.
+- Implement backend feature checks.
+- Connect existing modules to the centralized engine.
+
+## Phase 3 — Commission Engine
+
+- Define eligible order amount.
+- Implement plan rate snapshots.
+- Implement commission ledger.
+- Implement refunds and adjustments.
+- Add reconciliation and duplicate protection.
+
+## Phase 4 — Pricing and Owner Billing UI
+
+- Build pricing page.
+- Build feature comparison.
+- Build Owner subscription page.
+- Build billing history.
+- Build commission dashboard.
+
+## Phase 5 — Payments and Subscription Lifecycle
+
+- Integrate configured payment gateway.
+- Implement verified webhooks.
+- Implement activation and renewal.
+- Implement upgrade/downgrade.
+- Implement invoices.
+- Implement cancellation and failed-payment handling.
+
+## Phase 6 — Platform Administrator Dashboard
+
+- Add platform subscription overview.
+- Add revenue analytics.
+- Add commission reports.
+- Add subscription administration.
+- Add audit logs.
+
+## Phase 7 — Testing and Production Readiness
+
+- Run all acceptance tests.
+- Verify backend authorization.
+- Verify database persistence.
+- Verify payment webhook handling.
+- Verify tenant isolation.
+- Test mobile and desktop layouts.
+- Document production configuration.
+
+---
+
+# 18. STRICT DEVELOPMENT RULES
+
+1. Do not replace the existing application with a new project.
+2. Do not remove existing restaurant functionality.
+3. Do not break QR ordering.
+4. Do not break kitchen and waiter synchronization.
+5. Do not create dummy pricing buttons.
+6. Do not use hardcoded subscription status.
+7. Do not rely on localStorage for subscription security.
+8. Do not calculate authoritative commission on the frontend.
+9. Do not activate subscriptions without verified payment.
+10. Do not create mock invoices.
+11. Do not silently delete data on downgrade.
+12. Do not claim integrations are complete if they are only UI placeholders.
+13. Do not implement plan limits that are not defined in this PRD.
+14. Use database migrations safely.
+15. Preserve all existing restaurant and customer records.
+
+If a payment gateway, business tax configuration or external integration is not available, implement the appropriate integration interface and clearly report what remains to be configured.
+
+---
+
+# 19. FINAL DELIVERY REPORT
+
+After implementation, provide a detailed report containing:
+
+**A. Existing architecture**
+- Backend and database used.
+- Existing functionality reused.
+- Existing functionality changed.
+
+**B. Database**
+- Tables created.
+- Tables modified.
+- Database migrations.
+- Security policies.
+
+**C. Subscription engine**
+- Plan definitions.
+- Feature entitlement logic.
+- Backend enforcement.
+
+**D. Commission engine**
+- Calculation formula.
+- Eligible order definition.
+- Refund handling.
+- Ledger implementation.
+
+**E. Billing**
+- Payment gateway.
+- Webhook verification.
+- Subscription activation.
+- Renewal and cancellation.
+- Invoice generation.
+
+**F. Frontend**
+- Pricing page.
+- Feature comparison.
+- Owner billing dashboard.
+- Platform administrator dashboard.
+
+**G. Testing**
+- Tests passed.
+- Tests failed.
+- Tests not yet run.
+- Known limitations.
+
+**H. Production readiness**
+- Required API keys.
+- Payment gateway configuration.
+- Business tax configuration.
+- Domain/webhook setup.
+- Remaining deployment tasks.
+
+Final instruction:
+
+Build a real, scalable subscription and monetization system for d.cc.
+
+Prioritize data integrity, accurate commission collection, secure payment verification and clear plan-based access.
+
+Do not mark any phase complete until its implementation and relevant tests have actually been verified.
